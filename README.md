@@ -8,7 +8,7 @@ i faced my first challenge that javacript will not automatically take user input
 
 
 ```js
-    let convertToNumber = Number(inputEl.value); 
+let convertToNumber = Number(inputEl.value); 
 ```
 
 i learned that you I have to make sure to use value to get the user input and converet it to a variable so we can preform calculations on it.
@@ -20,13 +20,14 @@ One of the most help full things to use to debug the code was
 console.log()
 ```
 
-
 i also Learned about `result.toFixed(2)` it is used to round the decimal number for example from 8.2222222 to 8.22.  
 
 other than that it was fun doing this project and apply what i learned not just consuming tutorials. 
 
 
-I also made sure that the app is responsive 
+I also made sure that the app is responsive
+
+here is the website link if you to check it out [Click here](https://mohammedaref11.github.io/Unit-Converter-/)
 
 ## Mobile
 
