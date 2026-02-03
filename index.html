@@ -7,14 +7,21 @@
         <meta name="description" content="Unit Converter">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="preload" as="font" type="font/woff2" href="font/GeneralSans-Variable.woff2" crossorigin>
     </head>
     <body>
         
 
 
-        <main class="converter-container">
-            
-        </main>
+        <article class="converter-container">
+            <h1 class="converter__title">Weight converter</h1>
+            <input class="converter__input" id="user-input" type="number" min="1">
+            <div class="converter__buttons-container">
+                <button class="converter__buttons" id="kg-btn" onclick="kgButton()">Kg</button>
+                <button class="converter__buttons" id="lbs-btn" onclick="lbsButton()">Lbs</button>
+            </div>
+            <p id="result-el" class="result">Result: </p>
+        </article>
 
 
         

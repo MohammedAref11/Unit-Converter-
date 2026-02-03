@@ -35,3 +35,93 @@ input, button, textarea, select {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
+
+@font-face { 
+  font-family: "General-sans" ;
+  src: url("../font/GeneralSans-Variable.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 300 600;
+  font-style: normal;
+}
+
+:root { 
+  --black: #100c08; 
+  --white: #FEFEFA; 
+
+}
+
+body { 
+  display: flex;
+  align-items: center;
+  height: 100svh;
+  font-family: "General-sans"; 
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.converter-container { 
+  padding:2em;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border: 3px solid var(--white);
+  padding: 1rem;
+}
+
+.converter__title { 
+  text-align: center;
+  font-size: clamp(1.3rem , 1.6rem + 1.5vw , 2.8rem);
+}
+
+.converter__input { 
+  width: 80%;
+  padding: .25em;
+  background-color: var(--black);
+  border: 2px solid var(--white);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.converter__buttons-container { 
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  width: 60%;
+}
+
+.converter__buttons  { 
+  background-color: var(--black);
+  border: 2px solid var(--white);
+  color: var(--white);
+  font-size: 1.4rem; 
+  padding: .2em .7em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s all cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.converter__buttons:hover { 
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.converter__buttons:active { 
+  transform: translateY(6px);
+}
+
+.result { 
+  font-size: 1.6rem;
+} 
+
+
+@media (min-width: 768px) { 
+  .converter__buttons-container { 
+    flex-direction: row;
+    width: auto;
+  }
+}
+
+
